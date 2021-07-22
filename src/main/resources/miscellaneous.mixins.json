@@ -12,7 +12,8 @@
     "PlayerInventoryMixin",
     "ServerPlayerEntityMixin",
     "ServerPlayerInteractionManagerMixin",
-    "SheepEntityMixin"
+    "SheepEntityMixin",
+    "GrassBlockMixin"
   ],
   "client": [
   ],
