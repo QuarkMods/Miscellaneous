@@ -1,7 +1,6 @@
 package me.uquark.miscellaneous.block;
 
 import me.uquark.miscellaneous.Miscellaneous;
-import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -24,7 +23,7 @@ public class InvertedRedstoneLampBlock extends RedstoneLampBlock {
         super(Settings.copy(Blocks.REDSTONE_LAMP));
         blockItem = new BlockItem(this, new Item.Settings().group(ItemGroup.REDSTONE));
         setDefaultState(getDefaultState().with(LIT, true));
-        id = new Identifier(Miscellaneous.modid, "inverted_redstone_lamp");
+        id = new Identifier(Miscellaneous.MODID, "inverted_redstone_lamp");
     }
 
     @Override

@@ -13,7 +13,8 @@
     "ServerPlayerEntityMixin",
     "ServerPlayerInteractionManagerMixin",
     "SheepEntityMixin",
-    "GrassBlockMixin"
+    "GrassBlockMixin",
+    "DirtPathBlockMixin"
   ],
   "client": [
   ],

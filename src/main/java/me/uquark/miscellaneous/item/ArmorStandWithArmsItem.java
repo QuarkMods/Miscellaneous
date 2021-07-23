@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ArmorStandWithArmsItem extends AbstractItem {
     public ArmorStandWithArmsItem() {
-        super(Miscellaneous.modid, "armor_stand_with_arms", new Item.Settings().group(ItemGroup.DECORATIONS));
+        super(Miscellaneous.MODID, "armor_stand_with_arms", new Item.Settings().group(ItemGroup.DECORATIONS));
     }
 
     @Override

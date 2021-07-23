@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class LumberjackEnchantment extends AbstractEnchantment {
     protected LumberjackEnchantment() {
-        super(Miscellaneous.modid, "lumberjack", Rarity.COMMON, EnchantmentTarget.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "lumberjack", Rarity.COMMON, EnchantmentTarget.DIGGER, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override

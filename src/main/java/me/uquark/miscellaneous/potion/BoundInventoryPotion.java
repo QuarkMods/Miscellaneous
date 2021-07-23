@@ -7,6 +7,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 
 public class BoundInventoryPotion extends AbstractPotion {
     public BoundInventoryPotion() {
-        super(Miscellaneous.modid, "bound_inventory", new StatusEffectInstance(Effects.BOUND_INVENTORY_EFFECT, 3*60*20, 0));
+        super(Miscellaneous.MODID, "bound_inventory", new StatusEffectInstance(Effects.BOUND_INVENTORY_EFFECT, 3*60*20, 0));
     }
 }

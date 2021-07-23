@@ -7,6 +7,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 
 public class RottingAlivePotion extends AbstractPotion {
     public RottingAlivePotion() {
-        super(Miscellaneous.modid, "rotting_alive", new StatusEffectInstance(Effects.ROTTING_ALIVE_EFFECT, 20, 0));
+        super(Miscellaneous.MODID, "rotting_alive", new StatusEffectInstance(Effects.ROTTING_ALIVE_EFFECT, 20, 0));
     }
 }

@@ -28,11 +28,11 @@ import net.minecraft.world.World;
 
 public class WrenchItem extends AbstractToolItem {
     public static final String name = "wrench";
-    public static final Identifier WRENCH_SOUND_ID = new Identifier(Miscellaneous.modid, "wrench_sound");
+    public static final Identifier WRENCH_SOUND_ID = new Identifier(Miscellaneous.MODID, "wrench_sound");
     public static final SoundEvent WRENCH_SOUND_EVENT = new SoundEvent(WRENCH_SOUND_ID);
 
     public WrenchItem(Settings settings) {
-        super(Miscellaneous.modid, name, ToolMaterials.IRON, settings);
+        super(Miscellaneous.MODID, name, ToolMaterials.IRON, settings);
     }
 
     @Override

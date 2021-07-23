@@ -17,7 +17,7 @@ import net.minecraft.server.world.ServerWorld;
 
 public class RottingAliveEffect extends AbstractStatusEffect {
     protected RottingAliveEffect() {
-        super(Miscellaneous.modid, "rotting_alive", StatusEffectType.HARMFUL, 0x653b3b);
+        super(Miscellaneous.MODID, "rotting_alive", StatusEffectType.HARMFUL, 0x653b3b);
     }
 
     @Override
