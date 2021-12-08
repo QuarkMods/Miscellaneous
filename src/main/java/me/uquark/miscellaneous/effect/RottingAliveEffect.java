@@ -9,7 +9,7 @@ import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffectType;
+import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.*;
 import net.minecraft.entity.passive.VillagerEntity;
@@ -17,7 +17,7 @@ import net.minecraft.server.world.ServerWorld;
 
 public class RottingAliveEffect extends AbstractStatusEffect {
     protected RottingAliveEffect() {
-        super(Miscellaneous.MODID, "rotting_alive", StatusEffectType.HARMFUL, 0x653b3b);
+        super(Miscellaneous.MODID, "rotting_alive", StatusEffectCategory.HARMFUL, 0x653b3b);
     }
 
     @Override

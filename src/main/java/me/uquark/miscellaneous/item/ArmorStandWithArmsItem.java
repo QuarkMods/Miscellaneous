@@ -52,7 +52,7 @@ public class ArmorStandWithArmsItem extends AbstractItem {
                         NbtCompound nbtCompound = new NbtCompound();
                         nbtCompound.putBoolean("ShowArms", true);
                         armorStandEntity.readCustomDataFromNbt(nbtCompound);
-                        EntityType.loadFromEntityNbt(world, context.getPlayer(), armorStandEntity, itemStack.getTag());
+                        EntityType.loadFromEntityNbt(world, context.getPlayer(), armorStandEntity, itemStack.getNbt());
                         world.spawnEntity(armorStandEntity);
                         world.playSound((PlayerEntity)null, armorStandEntity.getX(), armorStandEntity.getY(), armorStandEntity.getZ(), SoundEvents.ENTITY_ARMOR_STAND_PLACE, SoundCategory.BLOCKS, 0.75F, 0.8F);
                     }
