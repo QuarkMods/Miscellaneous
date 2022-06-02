@@ -19,12 +19,12 @@ public class LumberjackEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 12;
+        return level * 12;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return 17;
+        return getMinPower(level) + 50;
     }
 
     @Override
