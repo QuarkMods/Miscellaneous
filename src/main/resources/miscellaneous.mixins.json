@@ -12,8 +12,7 @@
     "PlayerInventoryMixin",
     "ServerPlayerEntityMixin",
     "ServerPlayerInteractionManagerMixin",
-    "SheepEntityMixin",
-    "DirtPathBlockMixin"
+    "SheepEntityMixin"
   ],
   "client": [
   ],

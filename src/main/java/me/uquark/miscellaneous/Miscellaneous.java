@@ -5,14 +5,12 @@ import me.uquark.miscellaneous.effect.Effects;
 import me.uquark.miscellaneous.enchantment.Enchantments;
 import me.uquark.miscellaneous.item.Items;
 import me.uquark.miscellaneous.potion.Potions;
-import me.uquark.miscellaneous.util.PathManager;
 import me.uquark.quarkcore.potion.BrewingRecipeHelper;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Miscellaneous implements ModInitializer {
-    public final static PathManager PATH_MANAGER = new PathManager();
     public final static Logger LOGGER = LogManager.getLogger();
     public final static String MODID = "miscellaneous";
 
