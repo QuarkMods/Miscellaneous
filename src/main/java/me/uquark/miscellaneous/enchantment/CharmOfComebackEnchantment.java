@@ -15,12 +15,12 @@ public class CharmOfComebackEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 20;
+        return level * 20;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return 30;
+        return getMinPower(level) + 50;
     }
 
     @Override
