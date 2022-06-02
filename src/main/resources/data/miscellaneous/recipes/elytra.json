@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ENE",
-    "MSM",
+    "MEM",
+    "MNM",
     "MSM"
   ],
   "key": {
@@ -10,7 +10,7 @@
       "item": "minecraft:ender_eye"
     },
     "N": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:netherite_block"
     },
     "M": {
       "item": "minecraft:phantom_membrane"
