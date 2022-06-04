@@ -3,7 +3,6 @@ package me.uquark.miscellaneous.item;
 import com.mojang.serialization.Lifecycle;
 import me.uquark.miscellaneous.Miscellaneous;
 import me.uquark.quarkcore.potion.BrewingRecipeHelper;
-import me.uquark.quarkcore.reflect.ReflectionHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
@@ -12,7 +11,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
 
-import java.lang.reflect.Field;
 import java.util.Optional;
 import java.util.OptionalInt;
 

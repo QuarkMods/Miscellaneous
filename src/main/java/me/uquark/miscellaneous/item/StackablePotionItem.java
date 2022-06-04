@@ -9,10 +9,8 @@ import net.minecraft.item.Items;
 import net.minecraft.item.PotionItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.util.registry.RegistryKey;
 
-import java.lang.reflect.Field;
 import java.util.Optional;
 import java.util.OptionalInt;
 
