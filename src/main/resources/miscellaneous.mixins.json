@@ -12,7 +12,13 @@
     "PlayerInventoryMixin",
     "ServerPlayerEntityMixin",
     "ServerPlayerInteractionManagerMixin",
-    "SheepEntityMixin"
+    "SheepEntityMixin",
+    "AbstractSkeletonEntityMixin",
+    "CreeperEntityMixin",
+    "EndermanEntityMixin",
+    "SilverfishEntityMixin",
+    "SpiderEntityMixin",
+    "ZombieEntityMixin"
   ],
   "client": [
   ],
