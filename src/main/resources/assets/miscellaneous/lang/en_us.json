@@ -18,5 +18,11 @@
   "item.miscellaneous.necromass": "Necromass",
   "block.miscellaneous.inverted_redstone_lamp": "Inverted Redstone Lamp",
   "item.miscellaneous.armor_stand_with_arms": "Armor Stand with Arms",
-  "enchantment.miscellaneous.lumberjack": "Lumberjack"
+  "enchantment.miscellaneous.lumberjack": "Lumberjack",
+  "item.miscellaneous.wooden_sickle": "Wooden Sickle",
+  "item.miscellaneous.stone_sickle": "Stone Sickle",
+  "item.miscellaneous.iron_sickle": "Iron Sickle",
+  "item.miscellaneous.golden_sickle": "Golden Sickle",
+  "item.miscellaneous.diamond_sickle": "Diamond Sickle",
+  "item.miscellaneous.netherite_sickle": "Netherite Sickle"
 }

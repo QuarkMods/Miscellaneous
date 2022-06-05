@@ -4,9 +4,11 @@ import me.uquark.miscellaneous.block.Blocks;
 import me.uquark.miscellaneous.effect.Effects;
 import me.uquark.miscellaneous.enchantment.Enchantments;
 import me.uquark.miscellaneous.item.Items;
+import me.uquark.miscellaneous.item.SickleItem;
 import me.uquark.miscellaneous.potion.Potions;
 import me.uquark.quarkcore.potion.BrewingRecipeHelper;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.item.HoeItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,6 +37,7 @@ public class Miscellaneous implements ModInitializer {
 
         Blocks.INVERTED_REDSTONE_LAMP_BLOCK.register();
 
+        SickleItem.register();
         if (!BrewingRecipeHelper.registerPotionRecipe(net.minecraft.potion.Potions.AWKWARD, net.minecraft.item.Items.ENDER_PEARL, Potions.BOUND_INVENTORY_POTION))
             LOGGER.warn(String.format("Failed to register recipe of potion %s", Potions.BOUND_INVENTORY_POTION.id.getPath()));
         if (!BrewingRecipeHelper.registerPotionRecipe(Potions.BOUND_INVENTORY_POTION, net.minecraft.item.Items.REDSTONE, Potions.LONG_BOUND_INVENTORY_POTION))
