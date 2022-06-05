@@ -18,5 +18,11 @@
   "item.miscellaneous.necromass": "Некромасса",
   "block.miscellaneous.inverted_redstone_lamp": "Инвертированная лампа",
   "item.miscellaneous.armor_stand_with_arms": "Рукастая стойка для брони",
-  "enchantment.miscellaneous.lumberjack": "Дровосек"
+  "enchantment.miscellaneous.lumberjack": "Дровосек",
+  "item.miscellaneous.wooden_sickle": "Деревянный серп",
+  "item.miscellaneous.stone_sickle": "Каменный серп",
+  "item.miscellaneous.iron_sickle": "Железный серп",
+  "item.miscellaneous.golden_sickle": "Золотой серп",
+  "item.miscellaneous.diamond_sickle": "Алмазный серп",
+  "item.miscellaneous.netherite_sickle": "Незеритовый серп"
 }
