@@ -20,7 +20,7 @@ public class ServerPlayerInteractionManagerMixin {
     @Inject(method = "finishMining", at = @At("HEAD"))
     public void finishMining(BlockPos blockPos, Action action, String reason, CallbackInfo info) {
         if (Enchantments.LUMBERJACK_ENCHANTMENT.isEnchanted(player.getMainHandStack()))
-            Enchantments.LUMBERJACK_ENCHANTMENT.capitate(player, player.world, blockPos);
+            Enchantments.LUMBERJACK_ENCHANTMENT.cutDown(player, player.world, blockPos);
         if (player.getMainHandStack().getItem() instanceof SickleItem) {
             SickleItem.onHarvest(player.getMainHandStack(), player.getWorld(), player.world.getBlockState(blockPos), blockPos, player);
         }

@@ -24,5 +24,6 @@
   "item.miscellaneous.iron_sickle": "Железный серп",
   "item.miscellaneous.golden_sickle": "Золотой серп",
   "item.miscellaneous.diamond_sickle": "Алмазный серп",
-  "item.miscellaneous.netherite_sickle": "Незеритовый серп"
+  "item.miscellaneous.netherite_sickle": "Незеритовый серп",
+  "enchantment.miscellaneous.reflection": "Отражение"
 }

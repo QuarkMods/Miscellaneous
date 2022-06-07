@@ -24,5 +24,6 @@
   "item.miscellaneous.iron_sickle": "Iron Sickle",
   "item.miscellaneous.golden_sickle": "Golden Sickle",
   "item.miscellaneous.diamond_sickle": "Diamond Sickle",
-  "item.miscellaneous.netherite_sickle": "Netherite Sickle"
+  "item.miscellaneous.netherite_sickle": "Netherite Sickle",
+  "enchantment.miscellaneous.reflection": "Reflection"
 }

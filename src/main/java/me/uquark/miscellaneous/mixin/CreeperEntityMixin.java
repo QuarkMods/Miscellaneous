@@ -2,7 +2,6 @@ package me.uquark.miscellaneous.mixin;
 
 import me.uquark.miscellaneous.goal.FullMoonTargetGoal;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.mob.CaveSpiderEntity;
 import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.world.World;

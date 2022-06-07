@@ -1,36 +1,28 @@
 package me.uquark.miscellaneous.enchantment;
 
+import com.chocohead.mm.api.ClassTinkerers;
 import me.uquark.miscellaneous.Miscellaneous;
 import me.uquark.quarkcore.enchantment.AbstractEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ItemStack;
 
 public class CharmOfComebackEnchantment extends AbstractEnchantment {
+    public static final EnchantmentTarget ANY = ClassTinkerers.getEnum(EnchantmentTarget.class, "ANY");
+
     protected CharmOfComebackEnchantment() {
-        super(Miscellaneous.MODID, "charm_of_comeback", Rarity.COMMON, EnchantmentTarget.BREAKABLE, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "charm_of_comeback", Rarity.RARE, ANY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override
     public int getMinPower(int level) {
-        return level * 20;
+        return 30;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return getMinPower(level) + 50;
-    }
-
-    @Override
-    public int getMaxLevel() {
-        return 1;
-    }
-
-    @Override
-    public boolean isAcceptableItem(ItemStack stack) {
-        return true;
+        return 80;
     }
 
     @Override
