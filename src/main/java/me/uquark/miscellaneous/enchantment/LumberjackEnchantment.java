@@ -21,12 +21,12 @@ public class LumberjackEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 30;
+        return 20;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return 80;
+        return 70;
     }
 
     public void cutDown(PlayerEntity player, World world, BlockPos pos) {

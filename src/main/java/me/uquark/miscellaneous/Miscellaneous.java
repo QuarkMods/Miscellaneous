@@ -28,6 +28,7 @@ public class Miscellaneous implements ModInitializer {
         Enchantments.CHARM_OF_COMEBACK_ENCHANTMENT.register();
         Enchantments.LUMBERJACK_ENCHANTMENT.register();
         Enchantments.REFLECTION_ENCHANTMENT.register();
+        Enchantments.RING_PROTECTION_ENCHANTMENT.register();
 
         Effects.BOUND_INVENTORY_EFFECT.register();
         Effects.ROTTING_ALIVE_EFFECT.register();

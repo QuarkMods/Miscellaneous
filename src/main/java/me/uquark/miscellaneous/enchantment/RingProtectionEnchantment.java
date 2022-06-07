@@ -8,17 +8,11 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ItemStack;
 
-public class ReflectionEnchantment extends AbstractEnchantment {
+public class RingProtectionEnchantment extends AbstractEnchantment {
     public static final EnchantmentTarget SHIELD = ClassTinkerers.getEnum(EnchantmentTarget.class, "SHIELD");
 
-    protected ReflectionEnchantment() {
-        super(Miscellaneous.MODID, "reflection", Rarity.RARE, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
-    }
-
-    public float getReflectionFactor(ItemStack stack) {
-        if (!isEnchanted(stack))
-            return 0;
-        return 0.45f + (getEnchantmentLevel(stack) - 1) * 0.2f;
+    protected RingProtectionEnchantment() {
+        super(Miscellaneous.MODID, "ring_protection", Rarity.RARE, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     @Override
@@ -36,8 +30,14 @@ public class ReflectionEnchantment extends AbstractEnchantment {
         return getMinPower(level) + 50;
     }
 
+    public int getMaxUsingDuration(ItemStack stack) {
+        if (!isEnchanted(stack))
+            return 0;
+        return (getEnchantmentLevel(stack) * 2) * 1000;
+    }
+
     @Override
     protected boolean canAccept(Enchantment other) {
-        return other != Enchantments.RING_PROTECTION_ENCHANTMENT && super.canAccept(other);
+        return other != Enchantments.REFLECTION_ENCHANTMENT && super.canAccept(other);
     }
 }

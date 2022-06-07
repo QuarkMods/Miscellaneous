@@ -13,7 +13,8 @@
     "ServerPlayerEntityMixin",
     "ServerPlayerInteractionManagerMixin",
     "SheepEntityMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "ShieldItemMixin"
   ],
   "client": [
   ],
