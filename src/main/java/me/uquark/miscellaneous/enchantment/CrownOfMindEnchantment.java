@@ -7,7 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 
 public class CrownOfMindEnchantment extends AbstractEnchantment {
     protected CrownOfMindEnchantment() {
-        super(Miscellaneous.MODID, "crown_of_mind", Rarity.RARE, EnchantmentTarget.ARMOR_HEAD, new EquipmentSlot[]{EquipmentSlot.HEAD});
+        super(Miscellaneous.MODID, "crown_of_mind", Rarity.COMMON, EnchantmentTarget.ARMOR_HEAD, new EquipmentSlot[]{EquipmentSlot.HEAD});
     }
 
     @Override
