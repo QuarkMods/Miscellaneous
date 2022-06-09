@@ -16,7 +16,7 @@ public class LumberjackEnchantment extends AbstractEnchantment {
     public static final EnchantmentTarget AXE = ClassTinkerers.getEnum(EnchantmentTarget.class, "AXE");
 
     protected LumberjackEnchantment() {
-        super(Miscellaneous.MODID, "lumberjack", Rarity.UNCOMMON, AXE, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "lumberjack", Rarity.COMMON, AXE, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override
@@ -26,7 +26,7 @@ public class LumberjackEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMaxPower(int level) {
-        return 70;
+        return 40;
     }
 
     public void cutDown(PlayerEntity player, World world, BlockPos pos) {

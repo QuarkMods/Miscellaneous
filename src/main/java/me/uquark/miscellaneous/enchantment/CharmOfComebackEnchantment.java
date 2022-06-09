@@ -12,7 +12,7 @@ public class CharmOfComebackEnchantment extends AbstractEnchantment {
     public static final EnchantmentTarget ANY = ClassTinkerers.getEnum(EnchantmentTarget.class, "ANY");
 
     protected CharmOfComebackEnchantment() {
-        super(Miscellaneous.MODID, "charm_of_comeback", Rarity.RARE, ANY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "charm_of_comeback", Rarity.COMMON, ANY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override
@@ -22,7 +22,7 @@ public class CharmOfComebackEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMaxPower(int level) {
-        return 80;
+        return 50;
     }
 
     @Override

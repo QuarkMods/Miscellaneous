@@ -12,7 +12,7 @@ public class ReflectionEnchantment extends AbstractEnchantment {
     public static final EnchantmentTarget SHIELD = ClassTinkerers.getEnum(EnchantmentTarget.class, "SHIELD");
 
     protected ReflectionEnchantment() {
-        super(Miscellaneous.MODID, "reflection", Rarity.RARE, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Miscellaneous.MODID, "reflection", Rarity.COMMON, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     public float getReflectionFactor(ItemStack stack) {
@@ -28,12 +28,12 @@ public class ReflectionEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 15 + level * 10;
+        return 30 + (level-1) * 10;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return getMinPower(level) + 50;
+        return getMinPower(level) + 20;
     }
 
     @Override

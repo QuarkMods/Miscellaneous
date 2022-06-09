@@ -12,7 +12,7 @@ public class RingProtectionEnchantment extends AbstractEnchantment {
     public static final EnchantmentTarget SHIELD = ClassTinkerers.getEnum(EnchantmentTarget.class, "SHIELD");
 
     protected RingProtectionEnchantment() {
-        super(Miscellaneous.MODID, "ring_protection", Rarity.RARE, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Miscellaneous.MODID, "ring_protection", Rarity.COMMON, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     @Override
@@ -22,12 +22,12 @@ public class RingProtectionEnchantment extends AbstractEnchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 15 + level * 10;
+        return 30 + (level-1) * 10;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return getMinPower(level) + 50;
+        return getMinPower(level) + 20;
     }
 
     public int getMaxUsingDuration(ItemStack stack) {
