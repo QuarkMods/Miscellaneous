@@ -14,6 +14,7 @@ public class EarlyRiser implements Runnable {
                 .addEnumSubclass("AXE", "me.uquark.miscellaneous.enchantment.EnchantmentTargetAxe")
                 .addEnumSubclass("SHIELD", "me.uquark.miscellaneous.enchantment.EnchantmentTargetShield")
                 .addEnumSubclass("ALL_WEAPON", "me.uquark.miscellaneous.enchantment.EnchantmentTargetAllWeapon")
+                .addEnumSubclass("ELYTRA", "me.uquark.miscellaneous.enchantment.EnchantmentTargetElytra")
                 .build();
     }
 }

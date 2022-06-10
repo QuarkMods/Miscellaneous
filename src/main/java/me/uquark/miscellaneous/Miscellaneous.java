@@ -9,6 +9,10 @@ import me.uquark.miscellaneous.item.SickleItem;
 import me.uquark.miscellaneous.potion.Potions;
 import me.uquark.quarkcore.potion.BrewingRecipeHelper;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.entity.boss.WitherEntity;
+import net.minecraft.entity.mob.WitherSkeletonEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -31,6 +35,7 @@ public class Miscellaneous implements ModInitializer {
         Enchantments.RING_PROTECTION_ENCHANTMENT.register();
         Enchantments.CROWN_OF_MIND_ENCHANTMENT.register();
         Enchantments.WATER_ASPECT_ENCHANTMENT.register();
+        Enchantments.DAMPING_ENCHANTMENT.register();
 
         Effects.BOUND_INVENTORY_EFFECT.register();
         Effects.ROTTING_ALIVE_EFFECT.register();
