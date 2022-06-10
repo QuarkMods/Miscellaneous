@@ -9,10 +9,6 @@ import me.uquark.miscellaneous.item.SickleItem;
 import me.uquark.miscellaneous.potion.Potions;
 import me.uquark.quarkcore.potion.BrewingRecipeHelper;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.entity.boss.WitherEntity;
-import net.minecraft.entity.mob.WitherSkeletonEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.server.network.ServerPlayerEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

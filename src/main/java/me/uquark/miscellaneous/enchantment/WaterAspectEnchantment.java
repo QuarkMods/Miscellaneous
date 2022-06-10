@@ -1,12 +1,8 @@
 package me.uquark.miscellaneous.enchantment;
 
-import com.chocohead.mm.api.ClassTinkerers;
 import me.uquark.miscellaneous.Miscellaneous;
 import me.uquark.quarkcore.enchantment.AbstractEnchantment;
-import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.enchantment.FireAspectEnchantment;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.*;

@@ -1,11 +1,9 @@
 package me.uquark.miscellaneous.enchantment;
 
-import com.chocohead.mm.api.ClassTinkerers;
 import me.uquark.miscellaneous.Miscellaneous;
 import me.uquark.miscellaneous.util.TreeDefinition;
 import me.uquark.quarkcore.enchantment.AbstractEnchantment;
 import net.minecraft.block.Block;
-import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
