@@ -8,4 +8,5 @@ public class Enchantments {
     public static final CrownOfMindEnchantment CROWN_OF_MIND_ENCHANTMENT = new CrownOfMindEnchantment();
     public static final WaterAspectEnchantment WATER_ASPECT_ENCHANTMENT = new WaterAspectEnchantment();
     public static final DampingEnchantment DAMPING_ENCHANTMENT = new DampingEnchantment();
+    public static final LevitationEnchantment LEVITATION_ENCHANTMENT = new LevitationEnchantment();
 }

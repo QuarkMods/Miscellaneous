@@ -36,6 +36,7 @@ public class Miscellaneous implements ModInitializer {
         Enchantments.CROWN_OF_MIND_ENCHANTMENT.register();
         Enchantments.WATER_ASPECT_ENCHANTMENT.register();
         Enchantments.DAMPING_ENCHANTMENT.register();
+        Enchantments.LEVITATION_ENCHANTMENT.register();
 
         Effects.BOUND_INVENTORY_EFFECT.register();
         Effects.ROTTING_ALIVE_EFFECT.register();
