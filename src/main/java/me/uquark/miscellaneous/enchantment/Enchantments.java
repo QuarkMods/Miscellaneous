@@ -6,4 +6,5 @@ public class Enchantments {
     public static final ReflectionEnchantment REFLECTION_ENCHANTMENT = new ReflectionEnchantment();
     public static final RingProtectionEnchantment RING_PROTECTION_ENCHANTMENT = new RingProtectionEnchantment();
     public static final CrownOfMindEnchantment CROWN_OF_MIND_ENCHANTMENT = new CrownOfMindEnchantment();
+    public static final WaterAspectEnchantment WATER_ASPECT_ENCHANTMENT = new WaterAspectEnchantment();
 }
