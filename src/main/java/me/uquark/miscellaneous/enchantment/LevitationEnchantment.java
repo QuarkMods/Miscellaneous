@@ -9,6 +9,8 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public class LevitationEnchantment extends AbstractEnchantment {
+    private static final float LEVITATION_CHANCE = 0.1f;
+
     protected LevitationEnchantment() {
         super(Miscellaneous.MODID, "levitation", Rarity.COMMON, CustomEnchantmentTarget.SHOOTER, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
@@ -36,7 +38,7 @@ public class LevitationEnchantment extends AbstractEnchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         super.onTargetDamaged(user, target, level);
         if (!user.world.isClient)
-            if (target instanceof LivingEntity)
+            if (target instanceof LivingEntity && user.world.getRandom().nextFloat() < LEVITATION_CHANCE)
                 ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, getDuration(level)), user);
     }
 }
