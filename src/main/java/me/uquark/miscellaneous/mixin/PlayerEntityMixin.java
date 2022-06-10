@@ -84,6 +84,10 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         return (int)Math.ceil((float)experience * factor);
     }
 
+    /**
+     * @author UQuark
+     * @reason calculating attack damage with respect to EntityType (for WaterAspect)
+     */
     @Overwrite
     public void attack(Entity target) {
         if (!target.isAttackable()) {

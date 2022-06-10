@@ -9,10 +9,9 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ItemStack;
 
 public class ReflectionEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget SHIELD = ClassTinkerers.getEnum(EnchantmentTarget.class, "SHIELD");
 
     protected ReflectionEnchantment() {
-        super(Miscellaneous.MODID, "reflection", Rarity.COMMON, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Miscellaneous.MODID, "reflection", Rarity.COMMON, CustomEnchantmentTarget.SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     public float getReflectionFactor(ItemStack stack) {

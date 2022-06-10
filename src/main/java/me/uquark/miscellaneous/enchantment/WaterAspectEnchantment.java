@@ -13,10 +13,9 @@ import net.minecraft.entity.mob.*;
 import net.minecraft.entity.passive.StriderEntity;
 
 public class WaterAspectEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget ALL_WEAPON = ClassTinkerers.getEnum(EnchantmentTarget.class, "ALL_WEAPON");
 
     protected WaterAspectEnchantment() {
-        super(Miscellaneous.MODID, "water_aspect", Rarity.COMMON, ALL_WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "water_aspect", Rarity.COMMON, CustomEnchantmentTarget.ALL_WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override

@@ -9,10 +9,8 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 
 public class CharmOfComebackEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget ANY = ClassTinkerers.getEnum(EnchantmentTarget.class, "ANY");
-
     protected CharmOfComebackEnchantment() {
-        super(Miscellaneous.MODID, "charm_of_comeback", Rarity.COMMON, ANY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "charm_of_comeback", Rarity.COMMON, CustomEnchantmentTarget.ANY, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override

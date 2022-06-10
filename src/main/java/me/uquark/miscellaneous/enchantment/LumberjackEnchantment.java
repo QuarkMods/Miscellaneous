@@ -13,10 +13,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class LumberjackEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget AXE = ClassTinkerers.getEnum(EnchantmentTarget.class, "AXE");
 
     protected LumberjackEnchantment() {
-        super(Miscellaneous.MODID, "lumberjack", Rarity.COMMON, AXE, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Miscellaneous.MODID, "lumberjack", Rarity.COMMON, CustomEnchantmentTarget.AXE, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     }
 
     @Override

@@ -7,10 +7,8 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
 public class DampingEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget ELYTRA = ClassTinkerers.getEnum(EnchantmentTarget.class, "ELYTRA");
-
     protected DampingEnchantment() {
-        super(Miscellaneous.MODID, "damping", Rarity.COMMON, ELYTRA, new EquipmentSlot[]{EquipmentSlot.CHEST});
+        super(Miscellaneous.MODID, "damping", Rarity.COMMON, CustomEnchantmentTarget.ELYTRA, new EquipmentSlot[]{EquipmentSlot.CHEST});
     }
 
     @Override

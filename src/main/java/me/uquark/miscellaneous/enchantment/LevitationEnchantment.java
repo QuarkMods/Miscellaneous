@@ -11,10 +11,8 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public class LevitationEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget SHOOTER = ClassTinkerers.getEnum(EnchantmentTarget.class, "SHOOTER");
-
     protected LevitationEnchantment() {
-        super(Miscellaneous.MODID, "levitation", Rarity.COMMON, SHOOTER, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Miscellaneous.MODID, "levitation", Rarity.COMMON, CustomEnchantmentTarget.SHOOTER, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     @Override

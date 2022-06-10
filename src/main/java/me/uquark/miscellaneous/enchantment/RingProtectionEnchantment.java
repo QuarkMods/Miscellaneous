@@ -9,10 +9,9 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ItemStack;
 
 public class RingProtectionEnchantment extends AbstractEnchantment {
-    public static final EnchantmentTarget SHIELD = ClassTinkerers.getEnum(EnchantmentTarget.class, "SHIELD");
 
     protected RingProtectionEnchantment() {
-        super(Miscellaneous.MODID, "ring_protection", Rarity.COMMON, SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        super(Miscellaneous.MODID, "ring_protection", Rarity.COMMON, CustomEnchantmentTarget.SHIELD, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
     }
 
     @Override
