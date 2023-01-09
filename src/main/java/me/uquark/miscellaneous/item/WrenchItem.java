@@ -2,16 +2,20 @@ package me.uquark.miscellaneous.item;
 
 import me.uquark.miscellaneous.Miscellaneous;
 import me.uquark.quarkcore.item.AbstractToolItem;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.impl.itemgroup.FabricItemGroup;
+import net.fabricmc.fabric.impl.itemgroup.MinecraftItemGroups;
 import net.minecraft.block.BedBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.PistonBlock;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
+import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.state.property.DirectionProperty;
@@ -23,13 +27,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class WrenchItem extends AbstractToolItem {
     public static final String name = "wrench";
     public static final Identifier WRENCH_SOUND_ID = new Identifier(Miscellaneous.MODID, "wrench_sound");
-    public static final SoundEvent WRENCH_SOUND_EVENT = new SoundEvent(WRENCH_SOUND_ID);
+    public static final SoundEvent WRENCH_SOUND_EVENT = SoundEvent.of(WRENCH_SOUND_ID);
 
     public WrenchItem(Settings settings) {
         super(Miscellaneous.MODID, name, ToolMaterials.IRON, settings);
@@ -38,11 +41,12 @@ public class WrenchItem extends AbstractToolItem {
     @Override
     public void register() {
         super.register();
-        Registry.register(Registry.SOUND_EVENT, WrenchItem.WRENCH_SOUND_ID, WrenchItem.WRENCH_SOUND_EVENT);
+        Registry.register(Registries.SOUND_EVENT, WrenchItem.WRENCH_SOUND_ID, WrenchItem.WRENCH_SOUND_EVENT);
     }
 
     public WrenchItem() {
-        this(new Settings().group(ItemGroup.TOOLS).maxCount(1));
+        this(new Settings().maxCount(1));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(this));
     }
 
     private static void success(PlayerEntity player, ItemStack stack, BlockPos pos, World world) {

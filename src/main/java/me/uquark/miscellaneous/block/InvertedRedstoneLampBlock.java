@@ -1,17 +1,16 @@
 package me.uquark.miscellaneous.block;
 
 import me.uquark.miscellaneous.Miscellaneous;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.RedstoneLampBlock;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 public class InvertedRedstoneLampBlock extends RedstoneLampBlock {
@@ -21,9 +20,10 @@ public class InvertedRedstoneLampBlock extends RedstoneLampBlock {
 
     public InvertedRedstoneLampBlock() {
         super(Settings.copy(Blocks.REDSTONE_LAMP));
-        blockItem = new BlockItem(this, new Item.Settings().group(ItemGroup.REDSTONE));
+        blockItem = new BlockItem(this, new Item.Settings());
         setDefaultState(getDefaultState().with(LIT, true));
         id = new Identifier(Miscellaneous.MODID, "inverted_redstone_lamp");
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> entries.add(blockItem));
     }
 
     @Override
@@ -42,7 +42,7 @@ public class InvertedRedstoneLampBlock extends RedstoneLampBlock {
     }
 
     public void register() {
-        Registry.register(Registry.BLOCK, id, this);
-        Registry.register(Registry.ITEM, id, blockItem);
+        Registry.register(Registries.BLOCK, id, this);
+        Registry.register(Registries.ITEM, id, blockItem);
     }
 }

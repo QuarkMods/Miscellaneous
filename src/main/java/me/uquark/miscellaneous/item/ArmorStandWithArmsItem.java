@@ -2,6 +2,7 @@ package me.uquark.miscellaneous.item;
 
 import me.uquark.miscellaneous.Miscellaneous;
 import me.uquark.quarkcore.item.AbstractItem;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.decoration.ArmorStandEntity;
@@ -21,7 +22,9 @@ import java.util.List;
 
 public class ArmorStandWithArmsItem extends AbstractItem {
     public ArmorStandWithArmsItem() {
-        super(Miscellaneous.MODID, "armor_stand_with_arms", new Item.Settings().group(ItemGroup.DECORATIONS));
+        super(Miscellaneous.MODID, "armor_stand_with_arms", new Item.Settings());
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.add(this));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> entries.add(this));
     }
 
     @Override

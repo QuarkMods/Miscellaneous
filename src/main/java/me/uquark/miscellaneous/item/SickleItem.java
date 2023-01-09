@@ -1,16 +1,18 @@
 package me.uquark.miscellaneous.item;
 
 import me.uquark.miscellaneous.Miscellaneous;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.*;
-import net.minecraft.tag.BlockTags;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3i;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
@@ -69,6 +71,7 @@ public class SickleItem extends MiningToolItem {
     private static final Random random = new Random();
     protected SickleItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
         super(attackDamage, attackSpeed, material, BlockTags.HOE_MINEABLE, settings);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(this));
     }
 
     public static void onHarvest(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
@@ -107,11 +110,11 @@ public class SickleItem extends MiningToolItem {
         Identifier goldId = new Identifier(Miscellaneous.MODID, "golden_sickle");
         Identifier diamondId = new Identifier(Miscellaneous.MODID, "diamond_sickle");
         Identifier netheriteId = new Identifier(Miscellaneous.MODID, "netherite_sickle");
-        Registry.register(Registry.ITEM, woodId, new SickleItem(ToolMaterials.WOOD, 0, -3.0f, new Item.Settings().group(ItemGroup.TOOLS)));
-        Registry.register(Registry.ITEM, stoneId, new SickleItem(ToolMaterials.STONE, 0, -3.0f, new Item.Settings().group(ItemGroup.TOOLS)));
-        Registry.register(Registry.ITEM, ironId, new SickleItem(ToolMaterials.IRON, 0, -3.0f, new Item.Settings().group(ItemGroup.TOOLS)));
-        Registry.register(Registry.ITEM, goldId, new SickleItem(ToolMaterials.GOLD, 0, -3.0f, new Item.Settings().group(ItemGroup.TOOLS)));
-        Registry.register(Registry.ITEM, diamondId, new SickleItem(ToolMaterials.DIAMOND, 0, -3.0f, new Item.Settings().group(ItemGroup.TOOLS)));
-        Registry.register(Registry.ITEM, netheriteId, new SickleItem(ToolMaterials.NETHERITE, 0, -3.0f, new Item.Settings().group(ItemGroup.TOOLS)));
+        Registry.register(Registries.ITEM, woodId, new SickleItem(ToolMaterials.WOOD, 0, -3.0f, new Item.Settings()));
+        Registry.register(Registries.ITEM, stoneId, new SickleItem(ToolMaterials.STONE, 0, -3.0f, new Item.Settings()));
+        Registry.register(Registries.ITEM, ironId, new SickleItem(ToolMaterials.IRON, 0, -3.0f, new Item.Settings()));
+        Registry.register(Registries.ITEM, goldId, new SickleItem(ToolMaterials.GOLD, 0, -3.0f, new Item.Settings()));
+        Registry.register(Registries.ITEM, diamondId, new SickleItem(ToolMaterials.DIAMOND, 0, -3.0f, new Item.Settings()));
+        Registry.register(Registries.ITEM, netheriteId, new SickleItem(ToolMaterials.NETHERITE, 0, -3.0f, new Item.Settings()));
     }
 }
